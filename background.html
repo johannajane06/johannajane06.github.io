@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>background</title>
+ <link rel="stylesheet" href="style.css"> 
+  <style type= "text/css">
+       body { 
+            background-size: cover;          
+            background-attachment: fixed;    
+            background-position: center;     
+            background-repeat: no-repeat;    
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: LightPink;
+         }
+   
+         .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top:0;
+            left:0;
+            background-color: lightcoral;
+            overflow-x: hidden;
+            transition: 0.5;
+            padding-top: 60px;
+         }
+
+         .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color:beige;
+            display:block;
+            transition: 0.3s;
+
+        }
+
+        .sidebar a:hover {
+               color:black;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top:0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        .openbtn:hover {
+            background-color: lightblue;
+        }
+        
+        #main {
+            transition: margin-left .5s;
+            padding: 16px
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+        }
+
+        #content-box {
+            background-color:#F89880; 
+            margin: 30px auto;
+            width: 70%;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+        } 
+
+        table {
+       border-collapse: collapse;
+       width: 60%;
+       margin: 50px auto;
+}
+
+th, td {
+  border: 1px solid #46C7C7;
+  padding:  8px;
+  text-align: left;
+}
+th {
+  background-color: #728FCE;
+}
+tr {
+   background-color:  #728FCE;
+   
+}
+
+        img{
+           float:left;
+           margin-right: 15px;
+           width: 200px;
+           height: 200px;
+           clear: both;
+        }
+
+        h1 {
+   color: rgb(246, 246, 247);
+   font-size:25px;
+   border-bottom: 2px dashed deepPink;
+   padding-bottom: 5px;
+   margin-top: 20px;
+ }
+ h2{
+   clear: both;
+
+ }
+    
+    
+    </style>
+   
+    </head>
+    <body>
+
+       <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)"
+    class="closebtn" onclick="closeNav()">x</a>
+        <a href="index.html">HOME</a>
+        <a href="background.html">BACKGROUND</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="music.html">MUSIC PLAYLIST</a>
+        <a href="watched.html">WATCHED</a>
+        <a href="more.html">MORE!</a>
+    </div>
+        
+    <div id="main">
+        <button class="openbtn"
+    onclick="openNav()">☰</button>
+    </div>
+
+    <script>
+    function openNav() {
+        document.getElementById("mySidebar").style.
+        width ="250px";
+
+        document.getElementById("main").style.marginLeft = "250px";
+
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width="0";
+
+         document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+    
+
+    
+ 
+ <h1 style= "font-family: 'Tahoma';text-align:center;">Let's get to Know about Me۫ ꣑ৎ   .  </h1>
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td style="font-family:'verdana'">Johanna Jane binti Johnny</td>
+    <td>20</td>
+    <td>Sibu,Sarawak</td>
+  </tr>
+</table>
+
+
+
+ <div id="content-box">
+<a href="sibu.jpg" target="_blank">
+<img src="sibu.jpg" alt="Sibu City" width="300" height="300"></a>
+ 
+<p style="text-align: justify;color: navy;line-height: 1.6;">Hi, you can just call me Jane🐇.So,as you see I'm from Sibu,Sarawak.You must be wondering where Sibu located in Sarawak.Sibu is a city located in the central region of Sarawak.Majority of people that lives in this town are the Chinese Foochow.Not only that, but the city is also known for its unique and delicious food which is cheap and easy to find.
+Alright, let's talk a little bit about me. First and foremost, I am a university student and still passionately completing my Diploma in Informatics Library at Universiti Teknologi Mara,Kedah.Actually I never expected that I ended up here and taking this course.This is because at first I really wanted to be a teacher.However, I failed the interview and I was really sad and I almost lose my confidence in furthering my study. Then, my parents encourage me to try taking the course that I am studying now. 
+At first I was a bit sceptical about this course because the library field was not actually in my dream career list and the campus is also really far away from my home but at the end I decided to give it a try and step out of my comfort zone. Now, I find this course interesting and I did not regret taking this course.</p>
+</div>
+
+<div>
+<h2 style="text-align: center;font-family: verdana;color: rgb(183, 72, 213);">My Hobbies</h2>
+  <table border="2" cellpadding="5" cellspacing="2">
+    <tr>
+      <th>Hobbies</th>
+      <th>Descriptions</th>
+    </tr>
+    <tr>
+    <td>Playing Games</td>
+    <td>I really love to play games. I usually will spend my time playing on my leisure day when there is no upcoming exam or any assignment.Games that
+      I usually play is mobile games such Mobile Legend, Good Cafe, Bad Cafe and Rythm Hive. I also enjoy playing visual novel games especially mystery-crime
+      games.</td>
+    </tr>
+    <tr>
+      <td>Listening to Music</td>
+      <td>I love listening to music. I would listen to listen while I'm studying,doing assignments and even when I read. Listening to music help me feel relax 
+        and less bored when doing those tasks. Some of my favourite genre include pop music, kpop,rock and indie music. One of artists that I usually listen to
+        include Taylor Swift, BTS, XJapan, Olivia Rodrigo and My Chemical Romance.
+      </td>
+    </tr>
+    
+    <tr>
+      <td>Watching Dramas/Movies/Anime</td>
+      <td>Watching dramas,movies and animes is also one of my favourite things to do on my free time. I usually love to watch dramas or movies especially
+        during nightime. It is the best time for me to watch dramas,movies or animes. I like to watch rom-com genre, historic genre, cartoon, anime
+        action genre,fantasy and mystery-crime shows. My all time favourite is the Sherlock Holmes trilogy movies starred by Downy Robert Jr. as Sherlock
+        Holmes and Jude Law as Dr. Watson. 
+      </td>
+    </tr>
+
+  </table>
+</div>
+<footer class="site-footer">
+    <p style="text-align: center;">2026 My Website. Made with Love</p>
+</footer>
+
+</body>
+</html>
+   

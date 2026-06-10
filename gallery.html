@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <style type= "text/css">
+       body { 
+            background-size: cover;          
+            background-attachment: fixed;    
+            background-position: center;     
+            background-repeat: no-repeat;    
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:lightpink ; 
+         }
+
+      .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top:0;
+            left:0;
+            background-color: lightcoral;
+            overflow-x: hidden;
+            transition: 0.5;
+            padding-top: 60px;
+         }
+
+         .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color:beige;
+            display:block;
+            transition: 0.3s;
+
+        }
+
+        .sidebar a:hover {
+               color:black;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top:0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        .openbtn:hover {
+            background-color: lightblue;
+        }
+        
+        #main {
+            transition: margin-left .5s;
+            padding: 16px
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+        }
+ 
+        img{
+           max-width: 100%;
+            height:auto;
+        } 
+        
+        h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #ff69b4;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+    </style>
+    </head>
+    <body>
+
+        <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)"
+    class="closebtn" onclick="closeNav()">x</a>
+        <a href="index.html">HOME</a>
+        <a href="background.html">BACKGROUND</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="music.html">MUSIC PLAYLIST</a>
+        <a href="watched.html">WATCHED</a>
+        <a href="more.html">MORE!</a>
+    </div>
+        
+    <div id="main">
+        <button class="openbtn"
+    onclick="openNav()">☰</button>
+    </div>
+
+    <script>
+    function openNav() {
+        document.getElementById("mySidebar").style.
+        width ="250px";
+
+        document.getElementById("main").style.marginLeft = "250px";
+
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width="0";
+
+         document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+      
+     <h1 style="text-align: center;text-decoration: wavy;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">🌸˚˖𓍢ִ໋🌷͙֒✧🩷˚⋆Gallery🌸˚˖𓍢ִ໋🌷͙֒✧🩷˚⋆</h1>
+     <p style="text-align: center;font-family: 'verdana', sans-serif;font-size: 20px;color: rgba(45, 117, 232, 0.632);">Here are collection of my favorite moments and photos!</p>
+     <div id="border-box" style="border: 2px solid LightCoral; padding: 20px; border-radius: 15px; background-color: #FAE1DD; box-shadow: 0px 4px 15px rgba(0,0,0,0.3);display: flex; flex-direction: column; align-items: center; gap: 20px;">
+        
+    <h2>Aesthetic Vibes</h2>
+    <img src= "aesthetic.jpg" width="460" height="345">
+    
+    <p>These are some of my favourite photos of mine that gives the aesthetic girl vibes.</p>
+
+    <img src="gallery.jpg" width="460" height="345">
+    
+    <p style= "text-align: center;">These are some of my favourite moments that I capture during my vacation and hometown visit.<br>I am really interested in taking pictures of the environment that I see everytime I go somewhere.</br></p>
+    
+    <h2>Highschool Memories!!</h2>
+
+    <img src="5 yakin.jpg" width="460" height="345">
+
+    <p style="text-align: center;">Last day of class and its our final year.<br> 5 Yakin will always be the class that I cherish especially with all the moments we spent for 2 years as classmates. I miss them.</br></p>
+    
+    <img src="study.jpg" width="460" height="345">
+    
+    <p style="text-align: center;">I still remember that I was struggling in Accounting subject that causes my accounting teacher decided to form a study group with her.I was a little embarrased that time but still I'm grateful on how persevere my accounting teacher in lecturing us this subject during our study group.
+        Thanks to her I was able to pass Account with flying colours. Thank you teacher!!</br></p>
+
+    <img src="science class.jpg" width="460" height="345">
+      
+    <p style="text-align: center;">Last day of science class before SPM!!Yeah, we did our best in science papers.
+        <br>I miss doing experiments during science class.</br></p>
+
+    <img src="graduate.jpg" width="460" height="345">
+
+    <p style="text-align: center;">Yeah, finally graduated from highschool!!<br>5 years in highschool were filled with challenges and happy memories. I miss singing the school song sometimes hehe.</br></p>
+ 
+    <footer class="site-footer">
+    <p style="text-align: center;">2026 My Website. Made with Love</p>
+ </footer>
+</body>
+</html>
+
+   

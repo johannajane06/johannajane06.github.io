@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>my personal site</title>
+  <link rel="stylesheet" href="style.css"> 
+  <style type= "text/css">
+    
+        body { 
+            background-size: cover;          
+            background-attachment: fixed;    
+            background-position: center;     
+            background-repeat: no-repeat;    
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background-image:url(kawaii.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+         }
+
+         .kawaii-page-box{
+            background-color: rgba(255,255,255,0.92);
+            width: 90%;
+            max-width: 1000px;
+            padding: 40px;
+            border-radius:35px;
+            border:3px dashed #FFD1DC;
+            box-shadow: 0px 10px 30px rgba(255,182,193,0.4);
+            text-align: center;
+            position: relative;
+         }
+         
+      
+        h1 {
+            font-family: Verdana, sans-serif;
+            color: #FF9AA2;
+            font-size: 36px;
+            margin-bottom: 10px;
+
+        }
+
+        h1 ::before, h1 ::after {
+            content: "᧔o᧓"
+
+        }
+
+        .subtitle {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color:"FFB7B2";
+            color: lightblue;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-family: verdana,sans-serif;
+            margin-bottom: 30px;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(255,183,178,0.3);
+        }
+
+        .back-btn:hover {
+            background-color: #BFFCC6;
+            color: #6D5D6E;
+            transform: scale(1.05);
+        }
+
+        .page-grid {
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top:20px;
+        }
+
+        .kawaii-card {
+            background: #ffffff;
+            border: 2px solid #FFE5EC;
+            border-radius: 25px;
+            padding: 23px;
+            width: 280px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.03);
+            box-sizing: border-box;
+            transition: transform 0.3 ease;
+        }
+
+        .kawaii-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .kawaii-card h3 {
+            font-family:verdana, sans-serif;
+            color: #FFB7B2;
+            margin-top: 0;
+        }
+
+        .cute-icon {
+            width: 65px;
+            height: 65px;
+            object-fit:contain;
+            transition: transform 0.3s ease;
+        }
+
+        .kawaii-card:hover .cute-icon{
+            transform: scale(1.15) rotate(5deg);
+        }
+
+        .kawaii-input{
+            width: 100%;
+            border: 2px solid #FFD1DC;
+            border-radius: 15px;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            outline: none;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            background-color:#FFFDF9; 
+        }
+
+        .kawaii-submit-btn{
+            background-color:#FFB7B2;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            font-family: Verdana,sans-serif; 
+            cursor: pointer;
+            width: 100%;
+            transition: 0.2s;
+        }
+
+        .kawaii-submit-btn:hover {
+            background-color:#BFFCC6 ;
+            color: #6D5D6E;
+        }
+
+
+    
+    </style>   
+    </head>
+     <body>
+
+    <div class="kawaii-page-box">
+        <a href="index.html" class="back-btn">↩Back</a>
+
+        <h1>My Random Cozy Page!!</h1>
+        <p class="subtitle">Welcome to My Random Cozy Page where I share random thing about myself!! </p>
+
+        <div class="page-grid">
+            <img src="board.jpg" class="cute-icon" alt="Board Icon">
+            <h3>💌 Leave a Note</h3>
+            <input type="text" placeholder="Your name..." class="kawaii-input">
+            <textarea placeholder="Write something sweet..." rowa="2" class="kawaii-input"></textarea>
+            <button class="kawaii-submit-btn" onclick="alert('Note has been Submit=͟͟͞♡')">Send Note ⌯⌲</button>
+        </div>
+
+        <div class="kawaii-card">
+            <h3>🎮Gameplay Video🎮</h3>
+            <video width="100%" controls style="border-radius: 15px; border: 2px solid #FFD1DC;">
+             <source src="roblox.mp4" type="video/mp4">
+             </video> 
+             </div>
+<div class="kawaii-card">
+                <h3>🎧~ᕷRelaxing Music🎧~ᕷ</h3>
+                <p style="font-size: 13px; margin-bottom: 15px;"> Let's relax to cozy background while browsing.</p>
+                <audio controls style="width: 100%;">
+                    <source src="relaxmusic.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            
+            <div style="flex: 1.5; min-width: 350px; text-align: center; padding-top: 10px;">
+        <h1 style="font-family: 'Times New Roman', Times, serif; color: #FF9AA2; margin-top: 0;">Random Quote</h1>
+   
+        <div style="background: white; border: 2px dashed #FFD1DC; padding: 20px; border-radius: 20px; text-align: center; margin-top: 15px;">
+            <p style="font-style: italic;">"Love Yourself and be Confidentദ്ദി(˵ •̀ ᴗ - ˵ ) ✧ </p>
+        </div>
+    
+    </div>
+   
+ <footer class="site-footer">
+    <p style="text-align: center;">2026 My Website. Made with Love</p>
+</footer>
+    </div>
+</body>
+
+</html>
+          
+
+    
+
